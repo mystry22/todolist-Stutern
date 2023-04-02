@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="./js/vendor.js"></script>
+    <title>Todo List</title>
+</head>
+<body>
+    <h4>Please find a possible list of my todo below</h4> <br />
+    <span id="lists" style="color: green;">
+    <script type="text/javascript">
+        localStorage.getItem('list')
+    </script>
+    </span> <br />
+
+    <form>
+        <label>Add New Todo</label> <br />
+        <input type="text" name="todo" id="todo" placeholder="Add Todo" />
+        <input type="submit" value="Add" onclick="addTodo()" />
+        <input type="submit" value="Remove" onclick="removeTodo()" />
+    </form>
+</body>
+</html>
